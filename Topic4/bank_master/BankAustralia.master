@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="Bank.master"%>
+
+<asp:Content ID="Content1" runat="server"
+ContentPlaceHolderID="ContentPlaceHolder1">
+<img src="pix/Australia.gif" alt ="pix_AU"/>
+<div />
+<asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server" />
+</asp:Content>

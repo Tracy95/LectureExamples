@@ -1,0 +1,34 @@
+﻿body {
+}
+.booksGrid
+{
+width:600;
+font-size: 12px;
+}
+.booksHeader
+{
+font-family: Arial;
+font-size: 10pt;
+font-weight: bold;
+color: black;
+background-color: Bisque;
+text-align: center
+}
+.booksRow
+{
+vertical-align:top;
+}
+.booksAlternate
+{
+vertical-align:top;
+background-color: Cornsilk;
+}
+.bookLabel
+{
+font-size: 14px;
+width: 400;
+}
+.bookItem
+{
+padding:5;
+}

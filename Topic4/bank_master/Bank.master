@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    litBannerTitle.Text = Page.Title;
+    lblDate.Text = DateTime.Now.ToLongDateString();
+  }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+<body>
+  <form id="form1" runat="server">
+    <table cellpadding="0" cellspacing="0" style="width: 400px">
+      <tr>
+        <td class="bannertxt">
+          <img src="pix/money2.gif" alt="pix_money" />
+        </td>
+        <td align="center" class="bannertxt">Bank International<br />
+          <asp:Literal ID="litBannerTitle" runat="server" />
+        </td>
+        <td class="bannertxt">
+          <img src="pix/money4.gif" alt="pix_money"/>
+        </td>
+      </tr>
+      <tr>
+        <td class="mainpage" colspan="3">
+          <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="footertxt">Copyright Monopoly Enterprises
+          <asp:Label ID="lblDate" runat="server" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

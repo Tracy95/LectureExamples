@@ -1,0 +1,14 @@
+<%@ Master Language="C#" MasterPageFile="../billnben.master"%>
+<asp:Content ID="Content1" runat="server" 
+     ContentPlaceHolderID="ContentPlaceHolder1">
+       
+    <img src="../Richmond/richmond150.jpg" align="left" hspace="5" />Bill n' Bens Nursery<br />
+         58 Swan St Richmond<br />
+         Tel: 03 8991 2342<br />
+         Fax: 03 8991 2345<br />
+         BnB@ozmail.com.au<br />
+         www.billnben.com.au
+     <p />
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" 
+                              runat="server" />
+</asp:Content>

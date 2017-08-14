@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED602BB9-CBB3-498C-96B5-20229B0FC19C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LectureExamples</RootNamespace>
+    <AssemblyName>LectureExamples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Customers.mdb" />
+    <Content Include="App_Data\Customers2.mdb" />
+    <Content Include="App_Data\JoinUs.mdf" />
+    <Content Include="App_Data\JoinUs_log.ldf">
+      <DependentUpon>JoinUs.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Login.accdb" />
+    <Content Include="App_Data\lothian.mdb" />
+    <Content Include="pix\0734403127.jpg" />
+    <Content Include="pix\0734403151.jpg" />
+    <Content Include="pix\2553784.jpg" />
+    <Content Include="pix\2554448.jpg" />
+    <Content Include="pix\3210598.jpg" />
+    <Content Include="pix\3212228.jpg" />
+    <Content Include="pix\3212434.jpg" />
+    <Content Include="pix\3223658.jpg" />
+    <Content Include="pix\AreListen.jpg" />
+    <Content Include="pix\BlueFin.jpg" />
+    <Content Include="pix\GetALife.jpg" />
+    <Content Include="Topic3\exercise3.1.1\sumof2.aspx" />
+    <Content Include="Topic3\exercise3.1.2\add_sub.aspx" />
+    <Content Include="Topic3\exercise3.1.3\calcPrice.aspx" />
+    <Content Include="Topic3\exercise3.1.4\simpleCalc.aspx" />
+    <Content Include="Topic3\exercise3.1.5\tempConverter.aspx" />
+    <Content Include="Topic3\exercise3.2.1\pickDestination.aspx" />
+    <Content Include="Topic3\exercise3.2.2\loopNumber.aspx" />
+    <Content Include="Topic3\exercise3.2.3\guessNumber.aspx" />
+    <Content Include="Topic3\exercise3.2.4\rollNumber.aspx" />
+    <Content Include="Topic3\exercise3.2.5\textRepeat.aspx" />
+    <Content Include="Topic3\exercise3.2.6\primeNumber.aspx" />
+    <Content Include="Topic3\exercise3.2.7\leapYear.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_array.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_create_variables.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_function.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_split_join.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_string.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_switch.aspx" />
+    <Content Include="Topic3\lecture_exampls\example_ternary.aspx" />
+    <Content Include="Topic4\App_Themes\background_header.jpg" />
+    <Content Include="Topic4\App_Themes\Brown\StyleSheet.css" />
+    <Content Include="Topic4\bank_master\Content1.aspx" />
+    <Content Include="Topic4\billnben\Orders.aspx" />
+    <Content Include="Topic4\billnben\Customers.aspx" />
+    <Content Include="Topic4\bank_master\pix\Australia.gif" />
+    <Content Include="Topic4\billnben\pix\billnbenLeft.gif" />
+    <Content Include="Topic4\billnben\pix\billnbenRight.gif" />
+    <Content Include="Topic4\bank_master\pix\money2.gif" />
+    <Content Include="Topic4\bank_master\pix\money4.gif" />
+    <Content Include="Topic4\billnben\Products.aspx" />
+    <Content Include="Topic4\billnben\site.css" />
+    <Content Include="Topic4\billnben\StyleSheetsimple.css" />
+    <Content Include="Topic4\Exercise4_1_1\billnbenLeft.gif" />
+    <Content Include="Topic4\Exercise4_1_1\billnbenRight.gif" />
+    <Content Include="Topic4\Exercise4_1_1\Caulfield\billnbenLeft.gif" />
+    <Content Include="Topic4\Exercise4_1_1\Caulfield\billnbenRight.gif" />
+    <Content Include="Topic4\Exercise4_1_1\Caulfield\caulfield150.jpg" />
+    <Content Include="Topic4\Exercise4_1_1\Caulfield\retail.aspx" />
+    <Content Include="Topic4\Exercise4_1_1\Caulfield\wholesale.aspx" />
+    <Content Include="Topic4\Exercise4_1_1\Richmond\billnbenLeft.gif" />
+    <Content Include="Topic4\Exercise4_1_1\Richmond\billnbenRight.gif" />
+    <Content Include="Topic4\Exercise4_1_1\Richmond\retail.aspx" />
+    <Content Include="Topic4\Exercise4_1_1\Richmond\richmond150.jpg" />
+    <Content Include="Topic4\Exercise4_1_1\Richmond\wholesale.aspx" />
+    <Content Include="Topic4\Exercise4_1_1\StyleSheetsimple.css" />
+    <Content Include="Topic4\Exercise4_1_1\welcome.aspx" />
+    <Content Include="Topic5\Exercise5_1_1\exerise5_1_1.aspx" />
+    <Content Include="Topic5\Exercise5_1_1\nearmiss.gif" />
+    <Content Include="Topic5\Exercise5_1_2\exerise5_1_2.aspx" />
+    <Content Include="Topic5\Exercise5_1_2\nearmiss.gif" />
+    <Content Include="Topic5\Exercise5_1_3\exerise5_1_3.aspx" />
+    <Content Include="Topic5\Exercise5_1_3\nearmiss.gif" />
+    <Content Include="Topic5\Exercise5_1_4\exercise5_1_4.aspx" />
+    <Content Include="Topic5\Images\nearmiss.gif" />
+    <Content Include="Topic5\Login2.aspx" />
+    <Content Include="Topic5\Login3.aspx" />
+    <Content Include="Topic6\AcceeDataSourceExample.aspx" />
+    <Content Include="Topic6\AccessDataControl2.aspx" />
+    <Content Include="Topic6\AccessDataControl.aspx" />
+    <Content Include="Topic6\App_Data\Customers2.mdb" />
+    <Content Include="Topic6\App_Data\lothian.mdb" />
+    <Content Include="default.aspx" />
+    <Content Include="Topic1\ShowToday.aspx" />
+    <Content Include="Topic2\ButtonControl1.aspx" />
+    <Content Include="Topic2\DropdownlistControl1.aspx" />
+    <Content Include="Topic2\HtmlPage1.html" />
+    <Content Include="Topic2\LabelControl1.aspx" />
+    <Content Include="Topic2\LabelControlDynamic.aspx" />
+    <Content Include="Topic2\PanelExample.aspx" />
+    <Content Include="Topic2\Style1.css" />
+    <Content Include="Topic2\TextboxExample.aspx" />
+    <Content Include="Topic2\WebForm1.aspx" />
+    <Content Include="Topic5\example_menu_siteMap.aspx" />
+    <Content Include="Topic5\Images\heart.png" />
+    <Content Include="Topic5\App_Data\Login.accdb" />
+    <Content Include="Topic5\Login.aspx" />
+    <Content Include="Topic5\Restricted\Default.aspx" />
+    <Content Include="Topic5\SampleNavigationControls.aspx" />
+    <Content Include="Topic5\SampleValidationControls.aspx" />
+    <Content Include="Topic5\site.css" />
+    <Content Include="Topic5\stylesheet1.css" />
+    <Content Include="Topic6\pix\0734403127.jpg" />
+    <Content Include="Topic6\pix\0734403151.jpg" />
+    <Content Include="Topic6\pix\2553784.jpg" />
+    <Content Include="Topic6\pix\2554448.jpg" />
+    <Content Include="Topic6\pix\3210598.jpg" />
+    <Content Include="Topic6\pix\3212228.jpg" />
+    <Content Include="Topic6\pix\3212434.jpg" />
+    <Content Include="Topic6\pix\3223658.jpg" />
+    <Content Include="Topic6\pix\AreListen.jpg" />
+    <Content Include="Topic6\pix\BlueFin.jpg" />
+    <Content Include="Topic6\pix\GetALife.jpg" />
+    <Content Include="Topic6\SQLDataSource.aspx" />
+    <Content Include="Topic7\App_Data\Customers2.mdb" />
+    <Content Include="Topic7\App_Data\lothian2.mdb" />
+    <Content Include="Topic7\App_Data\lothian.mdb" />
+    <Content Include="Topic7\Book_StyleSheet.css" />
+    <Content Include="Topic7\GridView2.aspx" />
+    <Content Include="Topic7\DetailsView.aspx" />
+    <Content Include="Topic7\Exercise7_2_1\2553784.jpg" />
+    <Content Include="Topic7\Exercise7_2_1\2554448.jpg" />
+    <Content Include="Topic7\Exercise7_2_1\3210598.jpg" />
+    <Content Include="Topic7\Exercise7_2_1\3212228.jpg" />
+    <Content Include="Topic7\Exercise7_2_1\3212434.jpg" />
+    <Content Include="Topic7\Exercise7_2_1\3223658.jpg" />
+    <Content Include="Topic7\Exercise7_2_1\Customers2.mdb" />
+    <Content Include="Topic7\Exercise7_2_1\exercise7_2_1.aspx" />
+    <Content Include="Topic7\Exercise7_2_2\0734403127.jpg" />
+    <Content Include="Topic7\Exercise7_2_2\0734403151.jpg" />
+    <Content Include="Topic7\Exercise7_2_2\AreListen.jpg" />
+    <Content Include="Topic7\Exercise7_2_2\BlueFin.jpg" />
+    <Content Include="Topic7\Exercise7_2_2\GetALife.jpg" />
+    <Content Include="Topic7\Exercise7_2_2\lothian.mdb" />
+    <Content Include="Topic7\Exercise7_2_2\solution260402.aspx" />
+    <Content Include="Topic7\exercise7_2_3\2553784.jpg" />
+    <Content Include="Topic7\exercise7_2_3\2554448.jpg" />
+    <Content Include="Topic7\exercise7_2_3\3210598.jpg" />
+    <Content Include="Topic7\exercise7_2_3\3212228.jpg" />
+    <Content Include="Topic7\exercise7_2_3\3212434.jpg" />
+    <Content Include="Topic7\exercise7_2_3\3223658.jpg" />
+    <Content Include="Topic7\exercise7_2_3\Customers2.mdb" />
+    <Content Include="Topic7\exercise7_2_3\ex640.aspx" />
+    <Content Include="Topic7\exercise7_2_4\details.mdb" />
+    <Content Include="Topic7\exercise7_2_4\solution_ex2.aspx" />
+    <Content Include="Topic7\exercise7_2_5\shop.mdb" />
+    <Content Include="Topic7\exercise7_2_5\WebForm1.aspx" />
+    <Content Include="Topic7\exercise7_3_1\2553784.jpg" />
+    <Content Include="Topic7\exercise7_3_1\2554448.jpg" />
+    <Content Include="Topic7\exercise7_3_1\3210598.jpg" />
+    <Content Include="Topic7\exercise7_3_1\3212228.jpg" />
+    <Content Include="Topic7\exercise7_3_1\3212434.jpg" />
+    <Content Include="Topic7\exercise7_3_1\3223658.jpg" />
+    <Content Include="Topic7\exercise7_3_1\Customers.mdb" />
+    <Content Include="Topic7\exercise7_3_1\solution270201.aspx" />
+    <Content Include="Topic7\exercise7_3_2\2553784.jpg" />
+    <Content Include="Topic7\exercise7_3_2\2554448.jpg" />
+    <Content Include="Topic7\exercise7_3_2\3210598.jpg" />
+    <Content Include="Topic7\exercise7_3_2\3212228.jpg" />
+    <Content Include="Topic7\exercise7_3_2\3212434.jpg" />
+    <Content Include="Topic7\exercise7_3_2\3223658.jpg" />
+    <Content Include="Topic7\exercise7_3_2\Customers.mdb" />
+    <Content Include="Topic7\exercise7_3_2\solution270202.aspx" />
+    <Content Include="Topic7\exercise7_3_3\2553784.jpg" />
+    <Content Include="Topic7\exercise7_3_3\2554448.jpg" />
+    <Content Include="Topic7\exercise7_3_3\3210598.jpg" />
+    <Content Include="Topic7\exercise7_3_3\3212228.jpg" />
+    <Content Include="Topic7\exercise7_3_3\3212434.jpg" />
+    <Content Include="Topic7\exercise7_3_3\3223658.jpg" />
+    <Content Include="Topic7\exercise7_3_3\Customers.mdb" />
+    <Content Include="Topic7\exercise7_3_3\solution270203.aspx" />
+    <Content Include="Topic7\exercise7_3_4\2553784.jpg" />
+    <Content Include="Topic7\exercise7_3_4\2554448.jpg" />
+    <Content Include="Topic7\exercise7_3_4\3210598.jpg" />
+    <Content Include="Topic7\exercise7_3_4\3212228.jpg" />
+    <Content Include="Topic7\exercise7_3_4\3212434.jpg" />
+    <Content Include="Topic7\exercise7_3_4\3223658.jpg" />
+    <Content Include="Topic7\exercise7_3_4\Customers.mdb" />
+    <Content Include="Topic7\exercise7_3_4\solution270204.aspx" />
+    <Content Include="Topic7\exercise7_3_5\2553784.jpg" />
+    <Content Include="Topic7\exercise7_3_5\2554448.jpg" />
+    <Content Include="Topic7\exercise7_3_5\3210598.jpg" />
+    <Content Include="Topic7\exercise7_3_5\3212228.jpg" />
+    <Content Include="Topic7\exercise7_3_5\3212434.jpg" />
+    <Content Include="Topic7\exercise7_3_5\3223658.jpg" />
+    <Content Include="Topic7\exercise7_3_5\Customers.mdb" />
+    <Content Include="Topic7\exercise7_3_5\solution270205.aspx" />
+    <Content Include="Topic7\exercise7_4_1\Customer.mdb" />
+    <Content Include="Topic7\exercise7_4_1\solution270301.aspx" />
+    <Content Include="Topic7\exercise7_4_2\Customer.mdb" />
+    <Content Include="Topic7\exercise7_4_2\solution270302.aspx" />
+    <Content Include="Topic7\exercise7_4_3\Customer.mdb" />
+    <Content Include="Topic7\exercise7_4_3\solution270303.aspx" />
+    <Content Include="Topic7\exercise7_4_4\Customer.mdb" />
+    <Content Include="Topic7\exercise7_4_4\solution270304.aspx" />
+    <Content Include="Topic7\exercise7_5_1\Customer.mdb" />
+    <Content Include="Topic7\exercise7_5_1\solution270401.aspx" />
+    <Content Include="Topic7\exercise7_5_2\Customer.mdb" />
+    <Content Include="Topic7\exercise7_5_2\solution270402.aspx" />
+    <Content Include="Topic7\exercise7_5_3\Customer.mdb" />
+    <Content Include="Topic7\exercise7_5_3\solution270403.aspx" />
+    <Content Include="Topic7\FormView.aspx" />
+    <Content Include="Topic7\GridView.aspx" />
+    <Content Include="Topic7\Paging_Sorting.aspx" />
+    <Content Include="Topic7\pix\0734403127.jpg" />
+    <Content Include="Topic7\pix\0734403151.jpg" />
+    <Content Include="Topic7\pix\2553784.jpg" />
+    <Content Include="Topic7\pix\2554448.jpg" />
+    <Content Include="Topic7\pix\3210598.jpg" />
+    <Content Include="Topic7\pix\3212228.jpg" />
+    <Content Include="Topic7\pix\3212434.jpg" />
+    <Content Include="Topic7\pix\3223658.jpg" />
+    <Content Include="Topic7\pix\AreListen.jpg" />
+    <Content Include="Topic7\pix\BlueFin.jpg" />
+    <Content Include="App_Data\details.mdb" />
+    <Content Include="Topic7\pix\GetALife.jpg" />
+    <Content Include="App_Data\shop.mdb" />
+    <Content Include="Topic7\SearchBook.aspx" />
+    <Content Include="Topic7\ShowBook.aspx" />
+    <Content Include="Topic8\DisplayCode.aspx" />
+    <Content Include="Topic8\FileProperties.aspx" />
+    <Content Include="Topic8\ListFiles.aspx" />
+    <Content Include="Topic8\pix\2553784.jpg" />
+    <Content Include="Topic8\pix\2554448.jpg" />
+    <Content Include="Topic8\pix\3210598.jpg" />
+    <Content Include="Topic8\pix\3212228.jpg" />
+    <Content Include="Topic8\pix\3212434.jpg" />
+    <Content Include="Topic8\pix\3223658.jpg" />
+    <Content Include="Topic8\SendEmail.aspx" />
+    <Content Include="Topic8\style.css" />
+    <Content Include="Topic8\style1.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Topic1\ShowToday.aspx.cs">
+      <DependentUpon>ShowToday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic1\ShowToday.aspx.designer.cs">
+      <DependentUpon>ShowToday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\ButtonControl1.aspx.cs">
+      <DependentUpon>ButtonControl1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\ButtonControl1.aspx.designer.cs">
+      <DependentUpon>ButtonControl1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\DropdownlistControl1.aspx.cs">
+      <DependentUpon>DropdownlistControl1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\DropdownlistControl1.aspx.designer.cs">
+      <DependentUpon>DropdownlistControl1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\LabelControl1.aspx.cs">
+      <DependentUpon>LabelControl1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\LabelControl1.aspx.designer.cs">
+      <DependentUpon>LabelControl1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\LabelControlDynamic.aspx.cs">
+      <DependentUpon>LabelControlDynamic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\LabelControlDynamic.aspx.designer.cs">
+      <DependentUpon>LabelControlDynamic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\PanelExample.aspx.cs">
+      <DependentUpon>PanelExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\PanelExample.aspx.designer.cs">
+      <DependentUpon>PanelExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\TextboxExample.aspx.cs">
+      <DependentUpon>TextboxExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\TextboxExample.aspx.designer.cs">
+      <DependentUpon>TextboxExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic2\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic2\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic4\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic4\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Topic5\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic5\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic5\Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic5\Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic5\Login3.aspx.cs">
+      <DependentUpon>Login3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic5\Login3.aspx.designer.cs">
+      <DependentUpon>Login3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic5\Restricted\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic5\Restricted\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic5\SampleNavigationControls.aspx.cs">
+      <DependentUpon>SampleNavigationControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic5\SampleNavigationControls.aspx.designer.cs">
+      <DependentUpon>SampleNavigationControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic5\SampleValidationControls.aspx.cs">
+      <DependentUpon>SampleValidationControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic5\SampleValidationControls.aspx.designer.cs">
+      <DependentUpon>SampleValidationControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic6\AcceeDataSourceExample.aspx.cs">
+      <DependentUpon>AcceeDataSourceExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic6\AcceeDataSourceExample.aspx.designer.cs">
+      <DependentUpon>AcceeDataSourceExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic6\AccessDataControl.aspx.cs">
+      <DependentUpon>AccessDataControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic6\AccessDataControl.aspx.designer.cs">
+      <DependentUpon>AccessDataControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic6\AccessDataControl2.aspx.cs">
+      <DependentUpon>AccessDataControl2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic6\AccessDataControl2.aspx.designer.cs">
+      <DependentUpon>AccessDataControl2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic6\SQLDataSource.aspx.cs">
+      <DependentUpon>SQLDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic6\SQLDataSource.aspx.designer.cs">
+      <DependentUpon>SQLDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\GridView2.aspx.cs">
+      <DependentUpon>GridView2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\GridView2.aspx.designer.cs">
+      <DependentUpon>GridView2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\DetailsView.aspx.cs">
+      <DependentUpon>DetailsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\DetailsView.aspx.designer.cs">
+      <DependentUpon>DetailsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\FormView.aspx.cs">
+      <DependentUpon>FormView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\FormView.aspx.designer.cs">
+      <DependentUpon>FormView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\GridView.aspx.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\GridView.aspx.designer.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\Paging_Sorting.aspx.cs">
+      <DependentUpon>Paging_Sorting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\Paging_Sorting.aspx.designer.cs">
+      <DependentUpon>Paging_Sorting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\SearchBook.aspx.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\SearchBook.aspx.designer.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic7\ShowBook.aspx.cs">
+      <DependentUpon>ShowBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic7\ShowBook.aspx.designer.cs">
+      <DependentUpon>ShowBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic8\DisplayCode.aspx.cs">
+      <DependentUpon>DisplayCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic8\DisplayCode.aspx.designer.cs">
+      <DependentUpon>DisplayCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic8\FileProperties.aspx.cs">
+      <DependentUpon>FileProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic8\FileProperties.aspx.designer.cs">
+      <DependentUpon>FileProperties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic8\ListFiles.aspx.cs">
+      <DependentUpon>ListFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic8\ListFiles.aspx.designer.cs">
+      <DependentUpon>ListFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Topic8\SendEmail.aspx.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Topic8\SendEmail.aspx.designer.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Topic4\Site1.Master" />
+    <Content Include="Topic5\Restricted\Web.config" />
+    <Content Include="Topic4\bank_master\Bank.master" />
+    <Content Include="Topic4\bank_master\BankAustralia.master" />
+    <Content Include="Topic4\billnben\MasterPage.master" />
+    <Content Include="Topic4\Exercise4_1_1\billnben.master" />
+    <Content Include="Topic4\Exercise4_1_1\Caulfield\Caulfield.master" />
+    <Content Include="Topic4\Exercise4_1_1\Richmond\Richmond.master" />
+    <Content Include="Topic4\App_Themes\Brown\SkinFile.skin" />
+    <Content Include="Topic4\App_Themes\Green\SkinFile.skin" />
+    <Content Include="Topic5\emptyweb.sitemap" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\Default\" />
+    <Folder Include="Topic8\UploadFiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57372/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

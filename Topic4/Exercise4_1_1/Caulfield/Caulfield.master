@@ -1,0 +1,16 @@
+<%@ Master Language="C#" MasterPageFile="../billnben.master" %>
+
+<asp:Content ID="Content1" runat="server"
+  ContentPlaceHolderID="ContentPlaceHolder1">
+  <img src="../Caulfield/caulfield150.jpg" align="left" hspace="5" />
+  Bill n' Bens Nursery<br />
+  258 Race St Caulfield<br />
+  Tel: 03 8991 2555<br />
+  Fax: 03 8991 2553<br />
+  BnB@ozmail.com.au<br />
+  www.billnben.com.au
+     <p />
+  <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+
+

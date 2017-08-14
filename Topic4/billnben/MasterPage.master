@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    litBannerTitle.Text = Page.Title;
+    lblDate.Text = DateTime.Now.ToLongDateString();
+  } 
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+  <link href="StyleSheetsimple.css" rel="stylesheet" type="text/css" />
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+<body>
+  <div style:width="400">
+    <form id="form1" runat="server">
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="bordertxt" colspan="3" height="20"></td>
+        </tr>
+        <tr>
+          <td class="bannertxt">
+            <img src="pix/BillnBenLeft.gif" alt="pix_BillnBen" /></td>
+          <td class="bannertxt">Bill n' Ben's Nursery<br />
+            <asp:Literal ID="litBannerTitle" runat="server" />
+          </td>
+          <td class="bannertxt">
+            <img src="pix/BillnBenRight.gif" alt="pix_BillnBen" />
+          </td>
+        </tr>
+        <tr>
+          <td class="bordertxt" colspan="3" height="20"></td>
+        </tr>
+        <tr>
+          <td valign="top" class="bordertxt" style="height: 340px">
+            <asp:HyperLink ID="hl1" runat="server"
+              NavigateUrl="Products.aspx" Text="Products" />
+            <p />
+            <asp:HyperLink ID="hl2" runat="server"
+              NavigateUrl="Customers.aspx" Text="Customers" />
+            <p />
+            <asp:HyperLink ID="hl3" runat="server"
+              NavigateUrl="Orders.aspx" Text="Orders" />
+          </td>
+          <td colspan="2" style="height: 327px" valign="top">
+            <div>
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              </asp:ContentPlaceHolder>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="footertxt">Copyright Bill n' Ben</td>
+          <td class="footertxt" align="right">
+            <asp:Label ID="lblDate" runat="server" />
+          </td>
+          <td class="footertxt"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

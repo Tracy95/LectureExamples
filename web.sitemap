@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="~/Topic5/SampleNavigationControls.aspx" title="Title page" />
+    <siteMapNode url="~/Topic5/example_menu_siteMap.aspx" title="Bread Crump Test page"/>
+
+    <siteMapNode url="~/searchtitle.aspx" title="Search for books"
+    description="Search for a book under a category">
+
+      <siteMapNode url="~/Topic5/Exercise5_1_1/exerise5_1_1.aspx" title="Adults"
+      description="Books for adult readers">
+        <siteMapNode url="~/AG.aspx"
+        title="Australiana and General Interest"
+        description="Books about Australia and of general interest"/>
+        <siteMapNode url="~/HR.aspx"
+        title="Health and Relationships"
+        description="Books about human health and relationships"/>
+        <siteMapNode url="~/HG.aspx" title="House and Garden"
+        description="Books to help you around the house and garden"/>
+        <siteMapNode url="~/PD.aspx"
+        title="Personal Development"
+        description="Books to guide in your personal development"/>
+      </siteMapNode>
+
+      <siteMapNode url="~/CYA.aspx" title="Younger Readers"
+        description="Books for children and young adults">
+        <siteMapNode url="~/YRA.aspx" title="Children and Young Adults"
+        description="Books for both children and young adults"/>
+        <siteMapNode url="~/YR.aspx" title="Children"
+        description="Books just for children"/>
+        <siteMapNode url="~/YA.aspx" title="Young Adults"
+        description="Books for teens and young adults"/>
+        <siteMapNode url="~/PB.aspx" title="Picture Books"
+        description="Picture books for children"/>
+      </siteMapNode>
+
+      <siteMapNode url="~/Info/default.aspx" title="Information">
+        <siteMapNode url="~/Info/faq.aspx" title="Frequently asked questions"
+        description="Freguently asked questions about Emerald Editions"/>
+        <siteMapNode url="~/Info/aboutus.aspx" title="About Emerald Editions"
+        description="A short history of Emerald Editions"/>
+        <siteMapNode url="~/Info/guidelines.aspx" title="Authors"
+        description="Guidelines for prospective authors"/>
+        <siteMapNode url="~/treeview.aspx" title="Site map"
+        description="A map of this website"/>
+      </siteMapNode>
+
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

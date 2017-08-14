@@ -1,0 +1,40 @@
+﻿
+body {
+}
+
+.MenuStaItm
+{
+color: #000000;
+background-color: #FFFFCC;
+font-size: 14px;
+padding-left: 2px;
+padding-top: 2px;
+padding-right: 20px;
+border: 2px solid #729B78;
+}
+.MenuStaHov
+{
+color: #ffffff;
+background-color: #ADD8E6;
+padding-left: 2px;
+padding-top: 2px;
+padding-right: 20px;
+font-size: 14px;
+border: 2px solid #348DA9;
+}
+.MenuDynItm
+{
+color: #000000;
+background-color: #F0E68C;
+font-size: 14px;
+padding: 2px;
+border: 1px solid #C1B11A;
+}
+.MenuDynHov
+{
+color: #FFFFFF;
+background-color: #ADD8E6;
+padding: 2px;
+border: 2px solid #348DA9;
+text-decoration: none;
+}

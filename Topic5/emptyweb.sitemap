@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Topic5/SampleValidationControls.aspx" title="Home"  description="Home page">
+    <siteMapNode url="" title="About us"  description="" >
+      
+      <siteMapNode url="" title="History"  description="" />
+      <siteMapNode url="" title="QA"  description="" />
+      <siteMapNode url="" title="Contact us"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Registration"  description="" />
+  </siteMapNode>
+</siteMap>

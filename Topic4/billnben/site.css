@@ -1,0 +1,158 @@
+﻿h1
+{
+    border-bottom: 3px solid #cc9900;
+    font: Georgia, serif;
+    color: #996600;
+}
+body
+{
+    font: "Trebuchet MS" , Verdana, sans-serif;
+    color: #696969;
+}
+#main
+{
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+ul#menu
+{
+    padding: 0px;
+    position: relative;
+    margin: 0;
+}
+
+ul#menu li
+{
+    display: inline;
+}
+
+ul#menu li a
+{
+    background-color: #e8eef4;
+    padding: 10px 20px;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #034af3;
+}
+
+ul#menu li a:hover
+{
+    background-color: #ffffff;
+}
+
+/* Forms --------------------*/
+fieldset label
+{
+    display: block;
+    padding: 4px;
+}
+
+input[type="text"], input[type="password"]
+{
+    width: 300px;
+}
+
+input[type="submit"]
+{
+    padding: 4px;
+}
+
+/*Menu*/
+
+.menu
+{
+    border-color: #FCFCFF #707078 #707078 #FCFCFF;
+    border-style: solid;
+    border-width: 1px;
+    cursor: default;
+    padding: 2px;
+}
+
+.MenuStaItm
+{
+    color: #000000;
+    background-color: #FFFFCC;
+    font-size: 14px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 20px;
+    border: 2px solid #729B78;
+}
+.MenuStaHov
+{
+    color: #ffffff;
+    background-color: #ADD8E6;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 20px;
+    font-size: 14px;
+    border: 2px solid #348DA9;
+}
+.MenuDynItm
+{
+    color: #000000;
+    background-color: #F0E68C;
+    font-size: 14px;
+    padding: 2px;
+    border: 1px solid #C1B11A;
+}
+.MenuDynHov
+{
+    color: #FFFFFF;
+    background-color: #ADD8E6;
+    padding: 2px;
+    border: 2px solid #348DA9;
+    text-decoration: none;
+}
+
+.button
+{
+    background-color: #0080C0;
+    color: White;
+    border-width: 4;
+    border-style: ridge;
+    font-size: 16;
+    font-weight: bold;
+    height: 50;
+    width: 200;
+}
+
+.txtBox
+{
+    background-color: #FAFFBD;
+    font-family: Arial;
+    border-color: Blue;
+    border-width: 4;
+    height: 50;
+    width: 200;
+}
+
+.pnlNearMiss
+{
+    border-width: 2;
+    border-style: ridge;
+    width: 500;
+    border-color: gray;
+}
+
+/* LOGIN FORM */
+.login
+{
+    background: LightGrey;
+    border: 10 solid #ccc;
+}
+
+.loginText
+{
+    text-align: left;
+    color: #333;
+}
+
+.vldSummary
+{
+    clear: both;
+    font-size: 16px;
+    display: block;
+    color: Red;
+}
